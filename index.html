@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 <script src="app.js"></script>
 </head>
 <body>
 <h1>teste 4</h1>
-<div id="nameCalculator">
 Nome:<input type="text" id="name">
-<div id="output"></div>
-</div>
+<div ng-controller="myController"></div>
+{{name}}
 </body>
 </html>
