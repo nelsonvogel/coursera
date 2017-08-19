@@ -20,5 +20,5 @@ var i=0;
 function calculateNumericOutput()
 {
 	student.name = document.getElementById('name').value;
-	document.getElementById('output').value = '4545' + i++;
+	document.getElementById('output').innerText = '4545' . i++;
 }
