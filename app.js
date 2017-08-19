@@ -16,9 +16,13 @@ function keyUp(event)
 	calculateNumericOutput();
 }
 
-var i=0;
 function calculateNumericOutput()
 {
 	student.name = document.getElementById('name').value;
-	document.getElementById('output').innerText = '4545' . i++;
+	var totalNameValue = 0;
+	for(var i=0; i<student.name.length; i++)
+	{
+		totalNameValue += student.name.charCodeAt(i);
+	}
+	document.getElementById('output').innerText = 'Total num' + totalNameValue;
 }
